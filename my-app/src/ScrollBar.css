@@ -1,0 +1,15 @@
+.ScrollBar {
+    margin: 0;
+    position: fixed;
+    width: 0%;
+    height: 8px;
+    margin-top: -10px;
+    background-color: rgb(202, 224, 0);
+    z-index: 10;
+}
+
+@media screen and (max-width: 800px) {
+    .ScrollBar {
+        margin-top: 0;
+    }
+}
