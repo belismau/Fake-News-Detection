@@ -23,6 +23,8 @@ class Content extends React.Component {
         window.getSelection().addRange(range);
         document.execCommand("copy");
         window.getSelection().removeAllRanges();
+
+        
     }
 
     render() {
