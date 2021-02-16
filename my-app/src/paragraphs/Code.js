@@ -12,7 +12,7 @@ class Code extends React.Component {
             <div className="CodeContainer">
                 <div
                     className="CopyCode"
-                    onClick={this.props.copyText}>
+                    onClick={this.props.copyCode}>
                     <FaCopy className="ContentIcon"/>
                 </div>
 

@@ -47,6 +47,7 @@ class Motivation extends React.Component {
                     codeImport    =   {"math"}
                     functionCode  =   {this.state.functionCode}
                     code          =   {this.state.code}
+                    copyCode      =   {this.props.copyText}
                 />
                 <p> 
                     Sed at sapien ante. In sed diam ante. Morbi felis ex, ullamcorper 

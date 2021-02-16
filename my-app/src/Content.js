@@ -18,13 +18,11 @@ class Content extends React.Component {
 
     copyText(e) {
         var range = document.createRange();
-        range.selectNode(e.target);
+        range.selectNode(document.getElementsByClassName('Code')[0]);
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(range);
         document.execCommand("copy");
         window.getSelection().removeAllRanges();
-
-        
     }
 
     render() {
