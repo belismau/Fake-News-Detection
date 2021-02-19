@@ -3,8 +3,7 @@
 .HeaderDiv {
   padding: 70px 50px;
   background-color: rgb(229, 255, 0);
-  margin: 10px 10px 40px 10px;
-  border-radius: 4px;
+  margin: 10px 10px 0 10px;
   display: flex;
   justify-content: center;
 }
@@ -14,6 +13,14 @@
   margin: 0 auto;
   font-size: 50px;
   color: rgb(77, 77, 77);
+}
+
+.HeaderContent > h1 > span:first-of-type {
+  display: inline;
+}
+
+.HeaderContent > h1 > span:last-of-type {
+  display: none;
 }
 
 .HeaderContent > h3 {
@@ -64,8 +71,8 @@
 
 @media screen and (max-width: 800px) {
   .HeaderDiv {
-    padding: 50px 30px;
-    margin: 0px 0px 40px 0px;
+    padding: 50px 30px 42px 30px;
+    margin: 0;
   }
 
   .HeaderContent > h1 {
@@ -74,6 +81,10 @@
 }
 
 @media screen and (max-width: 550px) {
+  .HeaderContent > h1 {
+    font-size: 35px;
+  }
+
   .HeaderPicture {
     margin-top: 40px;
     display: flex;
@@ -89,5 +100,15 @@
   .HeaderIcon {
     color: rgb(110, 117, 45);
     margin-left: 6px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .HeaderContent > h1 > span:first-of-type {
+    display: none;
+  }
+  
+  .HeaderContent > h1 > span:last-of-type {
+    display: inline;
   }
 }

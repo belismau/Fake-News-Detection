@@ -3,7 +3,7 @@ import './Paragraphs.css';
 function References() {
     return(
         <div className="Paragraph">
-            <h2> 6. References </h2>
+            <h2> 6. Referenser </h2>
             <div className="Reference">
                 <p className="ReferenceNumber"> [1] </p>
                 <p className="ReferenceContent"> 

@@ -4,7 +4,6 @@ function Footer() {
     return(
         <div className="Footer">
             <div className="FooterFirst"></div>
-            <div className="FooterLast"></div>
         </div>
     )
 }

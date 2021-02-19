@@ -3,17 +3,18 @@ import './Header.css';
 
 function Header() {
     const mailTo = "mailto:sabanovicbelis@gmail.com?" +
-                   "subject=Fake News Detektor Med Maskininlärning Och Linjär Progression&" +
-                   "body=Hej,%0D%0A%0D%0AKolla in detta projekt gjort av Belis Sabanovic " +
-                   "genom att klicka på länken nedan:%0D%0A" +
-                   "https://belissabanovic.com/%0D%0A%0D%0AHälsningar"
+                   "subject=Fake News Detection Med Maskininlärning Och Logistik Regression&" +
+                   "body=Kolla in detta projekt av Belis Sabanovic genom att klicka på " +
+                   "följande länk: https://fakenewsdetection.cf/"
     
     return(
         <div className="HeaderDiv">
             <div className="HeaderContent">
                 <h1> 
-                    Fake News Detektor Med Maskininlärning 
-                    Och Linjär Progression 
+                    Identifiering av Fake News Med Hjälp Av
+                    <span> Maskininlärning </span>
+                    <span> Maskin- inlärning </span>
+                    Och Logistisk Regression 
                 </h1>
                 <div className="HeaderPicture">
                     <div className="HeaderLeft">

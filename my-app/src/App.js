@@ -1,17 +1,29 @@
-import ScrollBar from './ScrollBar';
-import Header from './Header';
-import Content from './Content';
-import Footer from './Footer';
+import Home from './Home';
+import FnD from './FnD';
+
+import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 
 function App() {
-  return (
-    <div>
-      <ScrollBar />
-      <Header />
-      <Content />
-      <Footer />
-    </div>
-  );
+    return(
+        <Router>
+            <Switch>
+                <Route 
+                    path="/" 
+                    exact 
+                    component={Home} 
+                />
+                <Route 
+                    path="/app" 
+                    exact 
+                    component={FnD} 
+                />
+                <Redirect 
+                    from='*' 
+                    to='/' 
+                />
+            </Switch>
+        </Router>
+    )
 }
 
 export default App;

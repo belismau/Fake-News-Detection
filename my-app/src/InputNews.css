@@ -1,0 +1,53 @@
+.InputNewsCont {
+    background-color: rgb(229, 255, 0);
+    padding: 80px 0;
+    margin: 10px 10px 0 10px;
+}
+
+.InputNewsCont > form {
+    margin: 0 30px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+
+label {
+    color: rgb(77, 77, 77);
+    font-size: 30px;
+}
+
+.InputNews {
+    box-sizing: border-box;
+    outline: none;
+    padding: 20px 23px;
+    height: 300px;
+    border-radius: 2px;
+    background-color: rgb(207, 230, 0);
+    border: none;
+    max-width: 800px;
+    width: 100%;
+    font-size: 20px;
+    resize: none;
+    color: rgb(122, 136, 0);
+    margin: 30px 20px 40px 20px;
+}
+
+.InputNewsBtn {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    max-width: 300px;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 15px;
+    background: rgb(207, 230, 0);
+    color: rgb(116, 129, 0);
+    box-shadow: 5px 5px 2px 0px rgb(191, 212, 0);
+}
+
+::placeholder {
+    color: rgb(77, 77, 77);
+}

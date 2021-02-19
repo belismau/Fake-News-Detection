@@ -5,7 +5,7 @@ class Methods extends React.Component {
     render() {
         return(
             <div className="Paragraph">
-                <h2> 2. Methods </h2>
+                <h2> 2. Metoder </h2>
                 <p>
                     Praesent vel vestibulum lacus, a semper dolor. Sed congue faucibus nunc, 
                     ac molestie dui feugiat quis. Mauris tempus id sem egestas faucibus. 
@@ -27,7 +27,7 @@ class Methods extends React.Component {
                     vel. Integer sed arcu sit amet sapien commodo maximus eu vitae augue.
                 </p>
 
-                <h2> 2.1. Linear Progression </h2>
+                <h2> 2.1. Logistisk Regression </h2>
                 <p>
                     Mauris imperdiet nunc eros, eu fermentum magna consectetur vitae. Praesent 
                     iaculis urna pharetra est ullamcorper, sed semper elit lobortis. Sed at 
@@ -39,8 +39,9 @@ class Methods extends React.Component {
                 </p>
 
                 <img
-                    className="ContentPicture"
-                    src="../img/confusion_matrix.png"
+                    className   =   "ContentPicture"
+                    src         =   "../img/confusion_matrix.png"
+                    alt         =   "Confusion Matrix"
                 />
 
                 <p> 

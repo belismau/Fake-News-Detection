@@ -1,6 +1,6 @@
 import './ScrollBar.css';
 
-const ScrollBar = (props) => {
+const ScrollBar = () => {
     window.addEventListener('scroll', () => {
         var h = document.documentElement, 
             b = document.body,

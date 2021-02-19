@@ -8,17 +8,8 @@
     border-radius: 4px;
 }
 
-.FooterLast {
-    padding: 50px 50px;
-    background-color: rgb(197, 219, 0);
-}
-
 @media screen and (max-width: 800px) {
     .Footer {
       margin: 0;
-    }
-  
-    .HeaderContent > h1 {
-      font-size: 40px;
     }
   }

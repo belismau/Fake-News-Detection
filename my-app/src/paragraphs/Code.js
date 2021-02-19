@@ -3,10 +3,6 @@ import { FaCopy } from 'react-icons/fa';
 import './Code.css'
 
 class Code extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return(
             <div className="CodeContainer">
