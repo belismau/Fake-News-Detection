@@ -7,7 +7,7 @@ class InputNews extends React.Component {
 
         this.state = {
             value: '',
-            users: []
+            result: {}
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -24,11 +24,11 @@ class InputNews extends React.Component {
         e.preventDefault();
         fetch('/handlenews', {
             method: 'POST',
-            body: JSON.stringify({ 'data': this.state.value }),
+            body: JSON.stringify({ 'data': this.state.value}),
             headers: { "Content-Type": "application/json" }
         })
         .then(res => res.json())
-        .then(users => this.setState({ users }));
+        .then(res => this.setState({ result: res }));
     }
 
     render() {
@@ -53,9 +53,7 @@ class InputNews extends React.Component {
                         type        =   "submit"
                     />
                 </form>
-                {this.state.users.map(user =>
-                    <p key={user.id}>{user.username}</p>
-                )}
+                <p> {this.state.result.data} </p>
             </div>
         )
     }
