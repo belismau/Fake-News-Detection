@@ -1,0 +1,56 @@
+.Paragraph > h2 {
+    cursor: pointer;
+    font-size: 25px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.Paragraph > p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+.Underline {
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.Link {
+    position: relative;
+    cursor: pointer;
+}
+
+.Link::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 2px;
+    width: 100%;
+    height: 7px;
+    background-color: rgb(229, 255, 0);
+    z-index: -1;
+    transition: .3s all ease-in-out;
+    outline: none;
+}
+
+.Link:hover::before {
+    height: calc(100% - 5px);
+}
+
+.Reference {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.ReferenceNumber {
+    width: 25px;
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
+.ReferenceContent {
+    max-width: 650px;
+    line-height: 25px;
+}

@@ -1,0 +1,22 @@
+.Result {
+    margin: 0 30px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+
+.Result > div {
+    box-sizing: border-box;
+    outline: none;
+    padding: 20px 23px;
+    height: 350px;
+    border-radius: 2px;
+    background-color: rgb(214, 238, 0);
+    border: none;
+    max-width: 800px;
+    width: 100%;
+    font-size: 17px;
+    resize: none;
+    color: rgb(148, 165, 0);
+}

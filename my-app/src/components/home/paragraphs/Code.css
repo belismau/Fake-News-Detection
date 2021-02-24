@@ -1,0 +1,80 @@
+
+.CodeDiv {
+    box-shadow: 0 3px 2px 1px rgb(238, 238, 238);
+}
+
+.topBar {
+    height: 25px;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+}
+
+.topBar > div {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.redCircle {
+    background-color: #e07878;
+    margin-left: 10px;
+}
+
+.yellowCircle {
+    background-color: #e7df64;
+    margin-left: 2px;
+}
+
+.greenCircle {
+    background-color: #82e679;
+    margin-left: 2px;
+}
+
+.CodeContainer {
+    position: relative;
+    background-color: rgb(245, 245, 245);
+    padding: 30px;
+    margin-bottom: 40px;
+    overflow: scroll;
+    color: rgb(112, 114, 99);
+}
+
+.CopyCode {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px 15px 0 0;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.Code > div:not(:last-child) {
+    margin-bottom: 17px;
+}
+
+.ContentIcon {
+    font-size: 15px;
+    color: rgb(195, 195, 195);
+    transition: .3s all ease-in-out;
+}
+
+.codeImport > span {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 10px;
+}
+
+.CodeImport > span:nth-of-type(1), .CodeDef {
+    color: #e07878;
+}
+
+.CodeDefName {
+    color: rgb(94, 206, 84);
+}
+
+.ContentDragIn {
+    margin-left: 30px;
+    display: block;
+}

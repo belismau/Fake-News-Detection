@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap');
+
+.BtnToApp {
+    padding: 65px 50px;
+    background: rgb(216, 240, 0);
+    margin: 0 10px 0 10px;
+    text-align: center;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.BtnToAppButton {
+    display: inline-flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+    color: rgb(128, 141, 10);
+    font-size: 20px;
+    background-color: rgb(207, 230, 0);
+    padding: 20px 60px;
+    font-size: 22px;
+    box-shadow: 8px 8px 2px 1px rgb(191, 212, 0);
+    position: relative;
+    border-radius: 2px;
+}
+
+.BtnToAppButton:hover {
+    box-shadow: 0 8px 2px 1px rgb(190, 211, 0);
+}
+
+.BtnToAppButton > p {
+    margin-right: 5px;
+}
+
+.BtnToAppArrow {
+    position: relative;
+    left: 0;
+    font-size: 25px;
+    transition: .3s all ease-in-out;
+    color: rgb(151, 167, 14);
+}
+
+@media screen and (max-width: 800px) {
+    .BtnToApp {
+        margin: 0;
+        padding: 42px 30px 50px 30px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .BtnToAppButton {
+        font-size: 15px;
+        padding: 20px 25px;
+        box-shadow: 0px 8px 2px 1px rgb(191, 212, 0);
+    }
+    
+    .BtnToAppButton:hover {
+        box-shadow: 0px 8px 2px 1px rgb(191, 212, 0);
+    }
+    
+    .BtnToAppArrow {
+        font-size: 17px;
+    }
+    
+}
