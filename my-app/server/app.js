@@ -8,12 +8,18 @@ app.use(bodyParser.json());
 app.post('/handlenews', (req, res) => {
   var news = req.body.data
 
-  var info = 'Express server responded with OK! ' +
-             'Your input: ' + news
+  const { spawn } = require('child_process');
+  const pyScript = spawn('python', ['get_model.py', news]);
 
-  res.json({ data: info })
+  pyScript.stdout.on('data', function(data) {
+    res.json({ 'data': data.toString() })
+  });
+
+  pyScript.on('error', function() {
+    res.json({ 'data': 'Something went wrong when connected to Python script' })
+  });
+  
 });
-
 
 app.get('/api/download', (req, res) => {
   res.download('fakenews.pdf');
