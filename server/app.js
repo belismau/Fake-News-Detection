@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.post('/handlenews', (req, res) => {
   var news = req.body.data
 
-  const { spawn } = require('child_process');
+  const spawn = require('child_process').spawn;
   const pyScript = spawn('python', ['get_model.py', news]);
 
   pyScript.stdout.on('data', function(data) {
@@ -28,5 +28,3 @@ app.get('/api/download', (req, res) => {
 app.listen(port, () => {
   console.log(`Express server listening at http://localhost:${port}`)
 })
-
-module.exports = app;

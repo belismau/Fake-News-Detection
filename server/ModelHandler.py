@@ -6,7 +6,7 @@ class ModelHandler():
         self.model     = None
     
     def load_model(self):
-        model_file = open('../../model/logistic_regression_model.sav', 'rb')
+        model_file = open('../model/logistic_regression_model.sav', 'rb')
         self.model = pickle.load(model_file)
     
     def get_prediction(self):
