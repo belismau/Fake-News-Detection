@@ -1,12 +1,16 @@
 # Fake News Detection
-Web app built with React JS which presents a report about Fake News Detection with Logistic Regression, together with the model (created with Jupyter for news input tests).
+Web app built with React.js and Node.js which presents a report about Fake News Detection with Logistic Regression, together with the logistic regression model (created with Jupyter Notebook for testing several input news).
 
 ## Installation
 
-To run the web app, follow the instructions below.
+This web app has a client and a server part. The client created with React is used to present the website and serve its routes. The client side is fetching /handlenews with the user input to send the information to node.js server, which is using the logistic regression model to return a result.
+
+### Client
+
+To run the web app (will run on http://localhost:3000), follow the steps below.
 
 ``` 
-$ cd my-app 
+$ cd app 
 ```
 
 ``` 
@@ -17,9 +21,21 @@ $ npm install
 $ npm start 
 ```
 
-## Information
+### Server
 
-This web app is a part of **Fake News Detection with Machine Learning and Linear Progression**, which can be found here.
+To run the server (http://localhost:3001), follow the steps below.
+
+``` 
+$ cd server
+```
+
+``` 
+$ npm install 
+```
+
+``` 
+$ node app.js
+```
 
 ## Inspiration
 Inspiration taken from several articles:
