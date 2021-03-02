@@ -54,3 +54,22 @@
     max-width: 650px;
     line-height: 25px;
 }
+
+@media screen and (max-width: 800px) {
+    .Paragraph > h2 {
+        font-size: 22px;
+    }
+    
+    .Paragraph > p {
+        font-size: 17px;
+        line-height: 27px;
+    }
+
+    .Reference {
+        font-size: 14px;
+    }
+
+    .ReferenceContent {
+        line-height: 22px;
+    }
+}

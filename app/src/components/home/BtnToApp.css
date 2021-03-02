@@ -2,7 +2,7 @@
 
 .BtnToApp {
     padding: 65px 50px;
-    background: rgb(216, 240, 0);
+    background: rgb(224, 224, 224);
     margin: 0 10px 0 10px;
     text-align: center;
     display: flex;
@@ -19,18 +19,18 @@
         flex-direction: row;
     cursor: pointer;
     transition: .3s all ease-in-out;
-    color: rgb(128, 141, 10);
+    color: rgb(151, 151, 151);
     font-size: 20px;
-    background-color: rgb(207, 230, 0);
+    background-color: rgb(216, 216, 216);
     padding: 20px 60px;
     font-size: 22px;
-    box-shadow: 8px 8px 2px 1px rgb(191, 212, 0);
+    box-shadow: 8px 8px 2px 1px rgb(199, 199, 199);
     position: relative;
     border-radius: 2px;
 }
 
 .BtnToAppButton:hover {
-    box-shadow: 0 8px 2px 1px rgb(190, 211, 0);
+    box-shadow: 0 8px 2px 1px rgb(187, 187, 187);
 }
 
 .BtnToAppButton > p {
@@ -42,7 +42,7 @@
     left: 0;
     font-size: 25px;
     transition: .3s all ease-in-out;
-    color: rgb(151, 167, 14);
+    color: rgb(151, 151, 151);
 }
 
 @media screen and (max-width: 800px) {
@@ -56,11 +56,11 @@
     .BtnToAppButton {
         font-size: 15px;
         padding: 20px 25px;
-        box-shadow: 0px 8px 2px 1px rgb(191, 212, 0);
+        box-shadow: 0px 8px 2px 1px rgb(199, 199, 199);
     }
     
     .BtnToAppButton:hover {
-        box-shadow: 0px 8px 2px 1px rgb(191, 212, 0);
+        box-shadow: 0px 8px 2px 1px rgb(199, 199, 199);
     }
     
     .BtnToAppArrow {

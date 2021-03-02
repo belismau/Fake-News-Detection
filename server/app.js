@@ -1,22 +1,22 @@
 const express     = require('express'),
       bodyParser  = require("body-parser"),
       app         = express(),
-      port        = 3001;
+      port        = 3001,
+      spawn       = require('child_process').spawn;
 
 app.use(bodyParser.json());
 
 app.post('/handlenews', (req, res) => {
   var news = req.body.data
 
-  const spawn = require('child_process').spawn;
-  const pyScript = spawn('python', ['get_model.py', news]);
+  const pyScript = spawn('python', ['./get_model.py', news]);
 
   pyScript.stdout.on('data', function(data) {
     res.json({ 'data': data.toString() })
   });
 
   pyScript.on('error', function() {
-    res.json({ 'data': 'Something went wrong when connected to Python script' })
+    res.json({ 'data': 'Something went wrong when connecting to "get_model.py"' })
   });
   
 });

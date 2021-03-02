@@ -2,7 +2,7 @@
 
 .HeaderDiv {
   padding: 70px 50px;
-  background-color: rgb(229, 255, 0);
+  background-color: rgb(209, 209, 209);
   margin: 10px 10px 0 10px;
   display: flex;
   justify-content: center;
@@ -58,7 +58,7 @@
 }
 
 .HeaderLeft > div > p:nth-child(2) {
-  color: rgb(136, 145, 61);
+  color: rgb(143, 143, 143);
   font-size: 13px;
 }
 
@@ -98,7 +98,7 @@
   }
 
   .HeaderIcon {
-    color: rgb(110, 117, 45);
+    color: rgb(124, 124, 124);
     margin-left: 6px;
   }
 }
