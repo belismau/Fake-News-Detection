@@ -2,7 +2,8 @@ const express     = require('express'),
       bodyParser  = require("body-parser"),
       app         = express(),
       port        = 3001,
-      spawn       = require('child_process').spawn;
+      spawn       = require('child_process').spawn,
+      path        = require('path');
 
 app.use(bodyParser.json());
 
@@ -18,11 +19,21 @@ app.post('/handlenews', (req, res) => {
   pyScript.on('error', function() {
     res.json({ 'data': 'Something went wrong when connecting to "get_model.py"' })
   });
-  
+   
 });
 
-app.get('/api/download', (req, res) => {
-  res.download('fakenews.pdf');
+app.get('/download', (req, res) => {
+  var file = path.join(__dirname, 'fakenews.pdf');
+  
+  res.download(file, function (err) {
+    if (err) {
+        console.log("Error");
+        console.log(err);
+    } else {
+        console.log("Success");
+    }
+  });
+
 });
 
 app.listen(port, () => {

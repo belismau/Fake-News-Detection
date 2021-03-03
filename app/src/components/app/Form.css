@@ -12,15 +12,15 @@
     padding: 20px 23px;
     height: 350px;
     border-radius: 2px;
-    background-color: rgb(224, 224, 224);
+    background-color: var(--Medium);
     border: none;
     max-width: 800px;
     width: 100%;
     font-size: 17px;
     resize: none;
-    color: rgb(161, 161, 161);
+    color: var(--Darkest);
 }
 
 ::placeholder {
-    color: rgb(161, 161, 161);
+    color: var(--Darkest);
 }

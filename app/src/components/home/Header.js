@@ -6,11 +6,18 @@ class Header extends React.Component {
     constructor(props) {
         super(props);
 
+        this.state = {
+            result: ''
+        }
+
         this.handleDownload = this.handleDownload.bind(this)
     }
 
-    handleDownload() {
-        fetch('http://localhost:3001/api/download')
+    handleDownload() {
+        fetch('/download', {
+            method: 'GET',
+            headers: { "Content-Disposition": "attachment;filename=\"fakenews.pdf\"" }
+        })
     }
     
     render() {
@@ -23,6 +30,7 @@ class Header extends React.Component {
             <div className="HeaderDiv">
                 <div className="HeaderContent">
                     <h1> 
+                        {this.state.result}
                         Identifiering av Fake News Med Hjälp Av
                         <span> Maskininlärning </span>
                         <span> Maskin- inlärning </span>

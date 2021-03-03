@@ -4,7 +4,7 @@
     width: 0%;
     height: 8px;
     margin-top: -10px;
-    background-color: rgb(136, 136, 136);
+    background-color: var(--Darkest);
     z-index: 10;
 }
 

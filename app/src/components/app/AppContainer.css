@@ -1,5 +1,5 @@
 .AppContainer {
-    background-color: rgb(209, 209, 209);
+    background-color: var(--Dark);
     min-height: 100vh;
     box-sizing: border-box;
     display: flex;
@@ -26,8 +26,8 @@
     padding: 17px;
     cursor: pointer;
     font-size: 15px;
-    background-color: rgb(197, 197, 197);
-    color: rgb(131, 131, 131);
+    background-color: var(--Darker);
+    color: var(--XDark);
     margin: 0 30px;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
