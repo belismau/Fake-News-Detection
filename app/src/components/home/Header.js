@@ -19,7 +19,7 @@ class Header extends React.Component {
     
     render() {
         const mailTo = "mailto:sabanovicbelis@gmail.com?" +
-                       "subject=Fake News Detection Med Maskininlärning Och Logistik Regression&" +
+                       "subject=Fake News Detection Med Maskininlärning, Logistik Regression Och Ensemblemetoder&" +
                        "body=Kolla in detta projekt av Belis Sabanovic genom att klicka på " +
                        "följande länk: https://fakenewsdetection.cf/"
                         
