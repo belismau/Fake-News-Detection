@@ -14,10 +14,7 @@ class Header extends React.Component {
     }
 
     handleDownload() {
-        fetch('/download', {
-            method: 'GET',
-            headers: { "Content-Disposition": "attachment;filename=\"fakenews.pdf\"" }
-        })
+        window.location.href = window.location.href + 'download'
     }
     
     render() {

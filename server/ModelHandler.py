@@ -11,10 +11,10 @@ class ModelHandler():
     
     def get_prediction(self):
         pred = (self.model.predict([self.inputNews]))[0]
-        if pred == 'false':
-            return 'Falskt'
-        else:
+        if pred == 'true':
             return 'Sant'
+        else:
+            return 'Falskt'
     
     def get_probability(self):
         prob = (self.model.predict_proba([self.inputNews]))[0][1]
