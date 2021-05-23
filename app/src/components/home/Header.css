@@ -2,17 +2,18 @@
 
 .HeaderDiv {
   padding: 70px 50px;
-  background-color: var(--Dark);
+  background-color: rgb(229, 255, 0);
   margin: 10px 10px 0 10px;
   display: flex;
   justify-content: center;
 }
 
 .HeaderContent > h1 {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
   font-size: 50px;
   color: rgb(77, 77, 77);
+  font-weight: 500;
 }
 
 .HeaderContent > h1 > span:first-of-type {
@@ -58,7 +59,7 @@
 }
 
 .HeaderLeft > div > p:nth-child(2) {
-  color: var(--textLight);
+  color: rgb(136, 151, 0);
   font-size: 13px;
 }
 
@@ -98,7 +99,7 @@
   }
 
   .HeaderIcon {
-    color: var(--textLight);
+    color: rgb(77, 77, 77);
     margin-left: 6px;
   }
 }

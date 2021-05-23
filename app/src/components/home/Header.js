@@ -32,9 +32,9 @@ class Header extends React.Component {
                     <h1> 
                         {this.state.result}
                         Identifiering av Fake News Med Hjälp Av
-                        <span> Maskininlärning </span>
-                        <span> Maskin- inlärning </span>
-                        Och Logistisk Regression 
+                        <span> Maskininlärning, </span>
+                        <span> Maskin- inlärning </span> Logistisk Regression och 
+                        Ensemblemetoder
                     </h1>
                     <div className="HeaderPicture">
                         <div className="HeaderLeft">

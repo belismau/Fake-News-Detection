@@ -19,43 +19,7 @@ class Code extends React.Component {
                     </div>
 
                     <div className="Code">
-                        {this.props.codeImport ?
-                            <div className="CodeImport">
-                                <span>import </span> 
-                                <span>{this.props.codeImport}</span>
-                            </div>
-                        : null }
-
-                        {this.props.function ?
-                            <div className="CodeFunction">
-                                <span className="CodeDef">{this.props.function} </span>
-                                <span 
-                                    className="CodeDefName">
-                                    {this.props.name}
-                                </span>
-                                <span>
-                                    ({this.props.parameter}):
-                                </span>
-                                {this.props.functionCode.map((str, i) => 
-                                    <p 
-                                        key={i}
-                                        className="ContentDragIn">
-                                        {str}
-                                    </p>
-                                )}
-                            </div>
-                        : null }
-
-                        {this.props.code ?
-                            <div className="CodeRest">
-                                {this.props.code.map((str, i) => 
-                                    <p
-                                        key={i}>
-                                        {str}
-                                    </p>
-                                )}
-                            </div>
-                        : null }
+                        {this.props.codeContent}
                     </div>
                 </div>
             </div>

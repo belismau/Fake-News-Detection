@@ -10,9 +10,12 @@ app.use(bodyParser.json());
 app.post('/handlenews', (req, res) => {
   var news = req.body.data
 
+  console.log(news)
+
   const pyScript = spawn('python', ['./get_model.py', news]);
 
   pyScript.stdout.on('data', function(data) {
+    console.log(data)
     res.json({ 'data': data.toString() })
   });
 

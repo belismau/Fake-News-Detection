@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
 
 .CodeDiv {
     box-shadow: 0 3px 2px 1px rgb(238, 238, 238);
@@ -51,8 +52,41 @@
     text-transform: uppercase;
 }
 
-.Code > div:not(:last-child) {
-    margin-bottom: 17px;
+.Code > div > p, .Code > div > p span {
+    font-size: 17px;
+    font-family: 'Zilla Slab', serif;
+}
+
+.Code > div > p {
+    margin-bottom: 14px;
+}
+
+.Code > div > p:last-child {
+    margin-bottom: 0;
+}
+
+.Code-green {
+    color: #63b95b;
+}
+
+.Code-red {
+    color: #bb6363;
+}
+
+.Code-blue {
+    color: #637abb;
+}
+
+.Code-indent {
+    margin-left: 20px;
+}
+
+.Code-indent2 {
+    margin-left: 40px;
+}
+
+.Code-indent3 {
+    margin-left: 60px;
 }
 
 .ContentIcon {
@@ -61,20 +95,8 @@
     transition: .3s all ease-in-out;
 }
 
-.codeImport > span {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 10px;
-}
-
-.CodeImport > span:nth-of-type(1), .CodeDef {
-    color: #e07878;
-}
-
-.CodeDefName {
-    color: rgb(94, 206, 84);
-}
-
-.ContentDragIn {
-    margin-left: 30px;
-    display: block;
+@media screen and (max-width: 800px) {
+    .Code > div > p, .Code > div > p span {
+        font-size: 14px;
+    }
 }

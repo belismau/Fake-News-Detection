@@ -5,6 +5,7 @@
 .TableOfContents > h2 {
     margin-bottom: 10px;
     font-size: 25px;
+    font-weight: 500;
 }
 
 .TOCContent {
@@ -25,7 +26,7 @@
 }
 
 .TOCText > h3 {
-    color: rgb(90, 92, 78);
+    color: rgb(115, 117, 102);
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
 }

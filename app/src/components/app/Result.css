@@ -12,11 +12,11 @@
     padding: 20px 23px;
     height: 350px;
     border-radius: 2px;
-    background-color: var(--Medium);
+    background-color: rgb(210, 233, 0);
     border: none;
     max-width: 800px;
     width: 100%;
     font-size: 17px;
     resize: none;
-    color: var(--Darkest);
+    color: rgb(127, 141, 0);
 }

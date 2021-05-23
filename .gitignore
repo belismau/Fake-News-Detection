@@ -34,3 +34,5 @@ yarn-error.log*
 
 __pycache__
 ModelHandler.pyc
+
+tempcode.txt

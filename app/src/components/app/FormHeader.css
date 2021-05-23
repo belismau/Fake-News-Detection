@@ -6,7 +6,7 @@
 
 .topBarInput {
     height: 35px;
-    background-color: var(--Darker);
+    background-color: rgb(207, 230, 0);
     display: flex;
     align-items: center;
     width: 800px;
@@ -41,7 +41,7 @@
     position: absolute;
     width: 90px;
     height: 70%;
-    background: var(--TabDark);
+    background: rgb(200, 223, 0);
     bottom: 0;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -54,7 +54,7 @@
 .appTab {
     left: 56px;
     height: 80%;
-    background: var(--TabDarker);
+    background: rgb(200, 223, 0);
 }
 
 .resTab {
@@ -72,6 +72,6 @@
 .appTab > p, .resTab > p {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 10px;
-    color: var(--XDark);
+    color: rgb(153, 170, 0);
     pointer-events: none;
 }

@@ -10,9 +10,9 @@ function TableOfContents() {
                         <h1> 01 </h1>
                     </div>
                     <div className="TOCText">
-                        <h3> Motivation </h3>
-                        <p> Why Fake News? </p>
-                        <p> How to prevent </p>
+                        <h3> Introduktion </h3>
+                        <p> Vad är Fake News? </p>
+                        <p> Avsiktlighet </p>
                     </div>
                 </div>
                 <div className="TOCSection">

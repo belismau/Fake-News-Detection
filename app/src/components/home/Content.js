@@ -1,9 +1,13 @@
 import React from 'react';
 import './Content.css';
 import TableOfContents from './TableOfContents';
-import Motivation from './paragraphs/Motivation'
-import Methods from './paragraphs/Methods';
+import Problemformulering from './paragraphs/Problemformulering'
+import Introduktion from './paragraphs/Introduktion';
 import References from './paragraphs/References';
+import RelateratArbete from './paragraphs/RelateratArbete';
+import BefintligaLosningar from './paragraphs/BefintligaLosningar';
+import MojligaLosningar from './paragraphs/MojligaLosningar';
+import SlutgiltigLosning from './paragraphs/SlutgiltigLosning';
 
 class Content extends React.Component {
     constructor(props) {
@@ -30,8 +34,12 @@ class Content extends React.Component {
         return(
             <div className="ContentContainer">
                 <TableOfContents />
-                <Motivation copyText={this.state.copyText} />
-                <Methods />
+                <Introduktion />
+                <Problemformulering copyText={this.state.copyText} />
+                <RelateratArbete />
+                <BefintligaLosningar />
+                <MojligaLosningar />
+                <SlutgiltigLosning />
                 <References />
             </div>
         )

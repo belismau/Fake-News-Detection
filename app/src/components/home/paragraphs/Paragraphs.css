@@ -1,8 +1,16 @@
 .Paragraph > h2 {
     cursor: pointer;
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     display: inline-block;
+    font-weight: 500;
+}
+
+.Paragraph > h3 {
+    font-size: 21px;
+    margin-bottom: 7px;
+    display: inline-block;
+    font-weight: 500;
 }
 
 .Paragraph > p {
@@ -16,9 +24,18 @@
     display: inline-block;
 }
 
+.Bold {
+    font-weight: 700;
+}
+
 .Link {
     position: relative;
     cursor: pointer;
+}
+
+.problemArea {
+    font-style: italic;
+    margin-left: 10px;
 }
 
 .Link::before {
@@ -59,10 +76,14 @@
     .Paragraph > h2 {
         font-size: 22px;
     }
+
+    .Paragraph > h3 {
+        font-size: 19px;
+    }
     
     .Paragraph > p {
-        font-size: 17px;
-        line-height: 27px;
+        font-size: 15px;
+        line-height: 23px;
     }
 
     .Reference {

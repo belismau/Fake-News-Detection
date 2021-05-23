@@ -48,12 +48,12 @@ class AppContainer extends React.Component {
     }
 
     addClickedTab(element) {
-        element.style.background    = 'var(--TabDarker)';
+        element.style.background    = 'rgb(193, 214, 0);';
         element.style.height        = '80%';
     }
 
     removeClickedTab(element) {
-        element.style.background    = 'var(--TabDark)';
+        element.style.background    = 'rgb(193, 214, 0);';
         element.style.height        = '70%';
     }
 

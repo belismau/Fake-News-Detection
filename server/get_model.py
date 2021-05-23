@@ -12,4 +12,4 @@ pred = model_handler.get_prediction()
 prob = model_handler.get_probability()
 
 # Sending data back to Node JS
-print('Prediction: {}\nProbability: {}'.format('pred', 'prob'))
+print('Prediction: {}\nProbability: {}'.format(pred, prob))
