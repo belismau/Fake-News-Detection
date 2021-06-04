@@ -1,13 +1,13 @@
 # Fake News Detection
-Web app built with React.js and Node.js which presents a report about Fake News Detection with Logistic Regression, together with the logistic regression model (created with Jupyter Notebook for testing several input news).
+Web app built with React.js and Flask which presents a report about Fake News Detection with Logistic Regression and Ensemble Methods, together with the model (created with Jupyter Notebook for testing several input news).
 
 ## Installation
 
-This web app has a client and a server part. The client created with React is used to present the website and serve its routes. The client side is fetching /handlenews with the user input to send the information to node.js server, which is using the logistic regression model to return a result.
+This web app has a client and a server. The client created with React is used to present the website and serve its routes. The client side is fetching /handlenews with the user input to send the information to Flask server, which uses the created model to return a result.
 
 ### Client
 
-To run the web app (will run on http://localhost:3000), follow the steps below.
+To run the web app (run it on http://localhost:3000), follow the steps below.
 
 ``` 
 $ cd app 
@@ -23,18 +23,14 @@ $ npm start
 
 ### Server
 
-To run the server (http://localhost:3001), follow the steps below.
+To run the server (run it on http://localhost:3001), follow the steps below.
 
 ``` 
 $ cd server
 ```
 
 ``` 
-$ npm install 
-```
-
-``` 
-$ node app.js
+$ flask run --port=3001
 ```
 
 ## Inspiration
